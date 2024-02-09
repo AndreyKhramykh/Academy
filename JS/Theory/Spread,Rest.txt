@@ -1,0 +1,27 @@
+Rest - остаточные параметры, должны быть в конце в перечне аргументов.
+
+Пример:
+function sumNumber(...args) {
+	let sum = 0;
+	for (let arg of args) {
+		sum += arg
+	}
+	return sum
+}
+sumNumber(1,2,3,4,5) // 15
+
+Spread - оператор расширения.
+
+Примеры:
+
+let arr = [3, 5, 1];
+
+Math.max(...arr) // 5
+
+let arr = [3, 5, 1];
+let arr2 = [8, 9, 15];
+
+let merged = [0, ...arr, 2, ...arr2];
+
+merged // 0,3,5,1,2,8,9,15 
+
